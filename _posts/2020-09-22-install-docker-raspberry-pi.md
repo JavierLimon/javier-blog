@@ -14,7 +14,9 @@ https://docs.docker.com/engine/install/debian/
 
 First Unistall Old Versions of docker
 
+{% highlight shell %}
 sudo apt-get remove docker docker-engine docker.io containerd runc
+{% endhighlight %}
 
 This will preserve the content on /var/lib/docker/ images, containers, volumes and networks.
 
