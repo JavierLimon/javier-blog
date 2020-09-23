@@ -4,7 +4,9 @@ title: "Install Docker on Raspberry Pi 4"
 ---
 In this post we will learn how to install Docker in a raspberry pi 4. Docker is the de facto standard to make containerized apps.
 
-We need a way to practice and make further laboratories, encapsulate the environment and then dispose so I decide to use [Docker]({{'https://www.docker.com/why-docker' | absolute_url}}){:target="_blank"} that it will work with raspberry out of the box.
+We need a way to practice and make further laboratories, encapsulate the environment and then dispose.
+
+I decide to use [Docker]({{'https://www.docker.com/why-docker' | absolute_url}}){:target="_blank"} that it will work with raspberry out of the box.
 
 ![Docker Image](/assets/images/docker-image.png)
 
