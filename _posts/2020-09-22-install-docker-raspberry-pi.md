@@ -8,10 +8,14 @@ I need a way to practice and make laboratories, encapsulate the environment and 
 
 ![Docker Image](/assets/images/docker-image.png)
 
-Requirements:
+
+
+## [](#header-2)Requirements:
 * Raspberry pi 4 with [Ubuntu 20.04.1 LTS]({{ 'https://ubuntu.com/download/raspberry-pi' | absolute_url }}){:target="_blank"} image.
 * Basic Linux commands
 * Basic understanding of Docker
+
+
 
 
 First we need to uninstall any older version of docker
