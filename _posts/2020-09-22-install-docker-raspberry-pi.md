@@ -2,22 +2,27 @@
 layout: post
 title: "Install Docker on Raspberry Pi 4"
 ---
+In this post we will learn how to install Docker in a raspberry pi 4. I need a way to practice and make laboratories, and I need a environment that I can encapsulate, run, and then dispose(about docker).
+
 ![Docker Image](/assets/images/docker-image.png)
 
-In this post we will learn how to install Docker in a raspberry pi 4
+At first I try to look into [Vagrant]({{'https://www.vagrantup.com/intro' | absolute_url }}){:target="_blank"} but it not work on raspberry pi out of the bat, at least not for the time I'm writing this, so I decide to use Docker.
 
 Requirements:
 * Raspberry pi 4 with [Ubuntu 20.04.1 LTS]({{ 'https://ubuntu.com/download/raspberry-pi' | absolute_url }}){:target="_blank"} image.
+* Basic Linux commands
+* Basic understanding of Docker
 
-First Uninstall old Versions of docker
+
+First we need to uninstall any older version of docker
 
 ```shell
 sudo apt-get remove docker docker-engine docker.io containerd runc
 ```
 
-This will preserve the content on /var/lib/docker/ images, containers, volumes and networks.
+This will preserve the content on /var/lib/docker/ images, containers, volumes and networks of any older version.
 
-Install dependencies
+Install dependencies needed by docker.
 
 ```shell
 sudo apt update && sudo apt install -y \
@@ -31,7 +36,7 @@ Add Docker's official GPG key:
 curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -
 ```
 
-Set up the stable repository of Docker
+Set up the stable repository of Docker in our machine
 ```shell
 sudo add-apt-repository "deb [arch=arm64] https://download.docker.com/linux/ubuntu \
 $(lsb_release -cs) stable"
@@ -40,7 +45,7 @@ Update and install docker
 ```shell
 sudo apt-get update && sudo apt install -y docker-ce docker-ce-cli containerd.io
 ```
-Check the installation
+You can check the installation with docker version, but you need to use sudo at the moment.
 ```shell
 sudo docker version
 ```
@@ -57,17 +62,16 @@ Got permission denied while trying to connect to the Docker daemon socket at
 unix:///var/run/docker.sock: Get http://%2Fvar%2Frun%2Fdocker.sock/v1.40/version:
 dial unix /var/run/docker.sock: connect: permission denied Client: Docker Engine - Community
 ```
-To fix this this you need to add the current user to the [docker group]({{ 'https://docs.docker.com/engine/install/linux-postinstall' | absolute_url }})
+This is because you need to add the current user to the [docker group]({{ 'https://docs.docker.com/engine/install/linux-postinstall' | absolute_url }}){:target="_blank"}
 
-add user to the docker group
 ```shell
 sudo usermod -aG docker $USER
 ```
-now apply the changes to the group
+Now to this to work we need to apply the changes to the group, you can restart, or you can use the newgrp command
 ```shell
 newgrp docker
 ```
-now if you run docker version again you will get something like this
+You run docker version again you will get somethig like this
 ```shell
 Client: Docker Engine - Community
  Version:           19.03.13
@@ -99,4 +103,7 @@ Server: Docker Engine - Community
 ```
 Congrats, Docker is working!
 
-[Docker official install guide]({{ 'https://docs.docker.com/engine/install/ubuntu/' | absolute_url }}).
+References:
+
+* [Docker official install guide]({{ 'https://docs.docker.com/engine/install/ubuntu/' | absolute_url }}){:target="_blank"}
+*  [Docker post install guide]({{ 'https://docs.docker.com/engine/install/linux-postinstall' | absolute_url }}){:target="_blank"}
