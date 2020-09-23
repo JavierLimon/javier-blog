@@ -22,14 +22,14 @@ This will preserve the content on /var/lib/docker/ images, containers, volumes a
 
 Install dependencies
 
-{% highlight shell %}
+```shell
 sudo apt update && sudo apt install -y apt-transport-https ca-certificates curl gnupg-agent software-properties-common
-{% endhighlight %}
+```
 
 Add Docker's official GPG key:
-
+```shell
 curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -
-
+```
 Set up the stable repository of Docker
 
 sudo add-apt-repository "deb [arch=arm64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
