@@ -8,4 +8,6 @@
 layout: home
 ---
 
-Welcome to my blog, this is a space that will be sharing Laboratories.
+Welcome to my blog, this is a space that to share courses and training as Laboratories.
+
+I hope I can help anyone seeking for complete information about the
