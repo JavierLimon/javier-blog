@@ -24,7 +24,9 @@ This will preserve the content on /var/lib/docker/ images, containers, volumes a
 Install dependencies
 
 ```shell
-sudo apt update && sudo apt install -y apt-transport-https ca-certificates curl gnupg-agent software-properties-common
+sudo apt update && sudo apt install -y \
+apt-transport-https ca-certificates curl \
+gnupg-agent software-properties-common
 ```
 
 Add Docker's official GPG key:
