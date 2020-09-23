@@ -33,4 +33,4 @@ header_page_refs: ['now', 'about', 'contact']
 disqus:
   # Leave shortname blank to disable comments site-wide.
   # Disable comments for any post by adding `comments: false` to that post's YAML Front Matter.
-  shortname: javier_limon
+  shortname: javierblog-com
