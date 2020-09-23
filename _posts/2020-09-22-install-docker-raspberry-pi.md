@@ -59,7 +59,7 @@ dial unix /var/run/docker.sock: connect: permission denied Client: Docker Engine
 ```
 To fix this this you need to add the current user to the [docker group]({{ 'https://docs.docker.com/engine/install/linux-postinstall' | absolute_url }})
 
-and add user to the docker group
+add user to the docker group
 ```shell
 sudo usermod -aG docker $USER
 ```
