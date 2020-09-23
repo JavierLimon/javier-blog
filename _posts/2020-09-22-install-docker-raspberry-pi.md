@@ -57,11 +57,9 @@ if you try to use the same command in the actual user(without sudo) you will get
  Built:             Wed Sep 16 17:03:40 2020
  OS/Arch:           linux/arm64
  Experimental:      false
-Got permission denied while trying to connect to the Docker daemon \
-socket at unix:///var/run/docker.sock: \
-Get http://%2Fvar%2Frun%2Fdocker.sock/v1.40/version: dial unix \
-/var/run/docker.sock: connect: permission deniedClient: \
-Docker Engine - Community
+Got permission denied while trying to connect to the Docker daemon socket at
+unix:///var/run/docker.sock: Get http://%2Fvar%2Frun%2Fdocker.sock/v1.40/version:
+dial unix /var/run/docker.sock: connect: permission deniedClient: Docker Engine - Community
 ```
 To fix this error you need to add the current user to the docker group (https://docs.docker.com/engine/install/linux-postinstall)
 
