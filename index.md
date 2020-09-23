@@ -10,4 +10,4 @@ layout: home
 
 Welcome to my blog, this is a space that to share courses and training as Laboratories.
 
-I hope I can help anyone seeking for complete information about the
+I hope I can help anyone with information you all seeking on google.
