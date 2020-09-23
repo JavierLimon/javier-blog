@@ -2,7 +2,8 @@
 layout: post
 title: "Install Docker on Raspberry Pi 4"
 ---
-![Octocat](/assets/images/docker-image.png)
+![Docker Image](/assets/images/docker-image.png)
+
 In this post we will learn how to install Docker in a raspberry pi 4
 
 Requirements:
