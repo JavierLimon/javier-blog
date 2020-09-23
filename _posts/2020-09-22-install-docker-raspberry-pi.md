@@ -2,20 +2,16 @@
 layout: post
 title: "Install Docker on Raspberry Pi 4"
 ---
-
-# [](#header-1)Install Docker on raspberry pi
+![Octocat](/assets/images/docker-image.png)
+In this post we will learn how to install Docker in a raspberry pi 4
 
 Requirements:
-
-Raspberry pi 4
-
-[Ubuntu 20.04.1 LTS]({{https://ubuntu.com/download/raspberry-pi}}).
-Ubuntu 20.04.1 LTS(https://ubuntu.com/download/raspberry-pi)
+* Raspberry pi 4 with ![Ubuntu 20.04.1 LTS](https://ubuntu.com/download/raspberry-pi) image.
 
 Reference:
 https://docs.docker.com/engine/install/debian/
 
-First Uninstall Old Versions of docker
+First Uninstall old Versions of docker
 
 ```shell
 sudo apt-get remove docker docker-engine docker.io containerd runc
@@ -50,7 +46,7 @@ Check the installation
 ```shell
 sudo docker version
 ```
-if you try to use the same command in the actual user(without sudo) you will get something like this
+if you try to use the same command in the actual user(without sudo) you will get an error like this
 ```shell
  Version:           19.03.13
  API version:       1.40
@@ -63,13 +59,13 @@ Got permission denied while trying to connect to the Docker daemon socket at
 unix:///var/run/docker.sock: Get http://%2Fvar%2Frun%2Fdocker.sock/v1.40/version:
 dial unix /var/run/docker.sock: connect: permission denied Client: Docker Engine - Community
 ```
-To fix this error you need to add the current user to the docker group (https://docs.docker.com/engine/install/linux-postinstall)
+To fix this this you need to add the current user to the docker group (https://docs.docker.com/engine/install/linux-postinstall)
 
 and add user to the docker group
 ```shell
 sudo usermod -aG docker $USER
 ```
-now apply the changes to the group with
+now apply the changes to the group
 ```shell
 newgrp docker
 ```
