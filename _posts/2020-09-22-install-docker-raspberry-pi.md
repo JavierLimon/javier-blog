@@ -7,11 +7,7 @@ title: "Install Docker on Raspberry Pi 4"
 In this post we will learn how to install Docker in a raspberry pi 4
 
 Requirements:
-* Raspberry pi 4 with ![Ubuntu 20.04.1 LTS](https://ubuntu.com/download/raspberry-pi) image.
-[Link to another page: About]({{ 'https://ubuntu.com/download/raspberry-pi' | absolute_url }}).
-
-Reference:
-https://docs.docker.com/engine/install/debian/
+* Raspberry pi 4 with [Ubuntu 20.04.1 LTS]({{ 'https://ubuntu.com/download/raspberry-pi' | absolute_url }}) image.
 
 First Uninstall old Versions of docker
 
@@ -61,7 +57,7 @@ Got permission denied while trying to connect to the Docker daemon socket at
 unix:///var/run/docker.sock: Get http://%2Fvar%2Frun%2Fdocker.sock/v1.40/version:
 dial unix /var/run/docker.sock: connect: permission denied Client: Docker Engine - Community
 ```
-To fix this this you need to add the current user to the docker group (https://docs.docker.com/engine/install/linux-postinstall)
+To fix this this you need to add the current user to the [docker group]({{ 'https://docs.docker.com/engine/install/linux-postinstall' | absolute_url }})
 
 and add user to the docker group
 ```shell
@@ -102,3 +98,5 @@ Server: Docker Engine - Community
   GitCommit:        fec3683
 ```
 Congrats, Docker is working!
+
+[Docker official install guide]({{ 'https://docs.docker.com/engine/install/ubuntu/' | absolute_url }}).
