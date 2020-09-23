@@ -1,13 +1,14 @@
 ---
 layout: post
-title: "Install Docker in Raspberry Pi 4"
+title: "Install Docker on Raspberry Pi 4"
 ---
 
-Install Docker in raspberry pi
+# [](#header-1)Install Docker on raspberry pi
 
 Requirements:
-Raspberry pi 4 (puedes usar el que tu quieras)
-20.04.1 LTS(https://ubuntu.com/download/raspberry-pi)
+Raspberry pi 4
+[Ubuntu 20.04.1 LTS]({{https://ubuntu.com/download/raspberry-pi}}).
+Ubuntu 20.04.1 LTS(https://ubuntu.com/download/raspberry-pi)
 
 Reference:
 https://docs.docker.com/engine/install/debian/
