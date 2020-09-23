@@ -21,9 +21,9 @@ sudo apt-get remove docker docker-engine docker.io containerd runc
 This will preserve the content on /var/lib/docker/ images, containers, volumes and networks.
 
 Install dependencies
-
+```shell
 sudo apt update && sudo apt install -y apt-transport-https ca-certificates curl gnupg-agent software-properties-common
-
+```
 Add Docker's official GPG key:
 
 curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -
