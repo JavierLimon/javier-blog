@@ -8,6 +8,7 @@ In this post we will learn how to install Docker in a raspberry pi 4
 
 Requirements:
 * Raspberry pi 4 with ![Ubuntu 20.04.1 LTS](https://ubuntu.com/download/raspberry-pi) image.
+[Link to another page: About]({{ 'https://ubuntu.com/download/raspberry-pi' | absolute_url }}).
 
 Reference:
 https://docs.docker.com/engine/install/debian/
