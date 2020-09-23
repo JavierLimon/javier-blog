@@ -37,7 +37,8 @@ curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -
 
 Set up the stable repository of Docker
 ```shell
-sudo add-apt-repository "deb [arch=arm64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+sudo add-apt-repository "deb [arch=arm64] https://download.docker.com/linux/ubuntu \
+$(lsb_release -cs) stable"
 ```
 Update and install docker
 ```shell
