@@ -10,15 +10,10 @@ I decide to use [Docker]({{'https://www.docker.com/why-docker' | absolute_url}})
 
 ![Docker Image](/assets/images/docker-image.png)
 
-
-
 ## [](#header-2)Requirements:
 * Raspberry pi 4 with [Ubuntu 20.04.1 LTS]({{ 'https://ubuntu.com/download/raspberry-pi' | absolute_url }}){:target="_blank"} image.
 * Basic Linux commands
 * Basic understanding of Docker
-
-
-
 
 First we need to uninstall any older version of docker
 
