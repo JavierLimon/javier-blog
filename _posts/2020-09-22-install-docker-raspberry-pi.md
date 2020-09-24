@@ -1,27 +1,30 @@
 ---
 layout: post
 title: "Install Docker on Raspberry Pi 4"
+categories: [Docker, Raspberry Pi]
 ---
 In this post we will learn how to install Docker in a raspberry pi 4. Docker is the de facto standard to make containerized apps.
 
-We need a way to practice and make further laboratories, encapsulate the environment and then dispose.
-
-I decide to use [Docker]({{'https://www.docker.com/why-docker' | absolute_url}}){:target="_blank"} that it will work with raspberry out of the box.
+I need a way to practice and make further laboratories, and the best way to encapsulate the environment and then dispose is with [Docker]({{'https://www.docker.com/why-docker' | absolute_url}}){:target="_blank"}.
 
 ![Docker Image](/assets/images/docker-image.png)
 
 ## [](#header-2)Requirements:
+
+
 * Raspberry pi 4 with [Ubuntu 20.04.1 LTS]({{ 'https://ubuntu.com/download/raspberry-pi' | absolute_url }}){:target="_blank"} image.
 * Basic Linux commands
 * Basic understanding of Docker
 
+## [](#header-2)Hands on
+
 First we need to uninstall any older version of docker
+
+This will preserve the content on /var/lib/docker/ images, containers, volumes and networks of any older version.
 
 ```shell
 sudo apt-get remove docker docker-engine docker.io containerd runc
 ```
-
-This will preserve the content on /var/lib/docker/ images, containers, volumes and networks of any older version.
 
 Install dependencies needed by docker.
 
@@ -102,7 +105,7 @@ Server: Docker Engine - Community
   Version:          0.18.0
   GitCommit:        fec3683
 ```
-Congrats, Docker is working!
+Great, Docker is working!
 
 References:
 
