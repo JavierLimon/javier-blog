@@ -22,6 +22,8 @@ I need a way to practice and make further laboratories, and the best way to enca
 
 ## [](#header-2)Hands on
 
+If you are using Ubuntu with GUI desktop, please open a terminal to put the commands.
+
 First we need to uninstall any older version of docker
 
 This will preserve the content on /var/lib/docker/ images, containers, volumes and networks of any older version.
