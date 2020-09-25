@@ -9,7 +9,7 @@ order: 1
 <div class="fcf-body">
 
     <div id="fcf-form">
-    <h3 class="fcf-h3">Contact us</h3>
+    <h3 class="fcf-h3">Contact</h3>
 
     <form id="fcf-form-id" class="fcf-form-class" action="https://getform.io/f/3bad303b-896a-4ad2-b858-eb4b80511aec" method="POST">
 
