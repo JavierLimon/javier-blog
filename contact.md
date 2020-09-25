@@ -14,21 +14,21 @@ order: 1
     <form id="fcf-form-id" class="fcf-form-class" action="https://getform.io/f/3bad303b-896a-4ad2-b858-eb4b80511aec" method="POST">
 
         <div class="fcf-form-group">
-            <label for="Name" class="fcf-label">Your name</label>
+            <label for="Name" class="fcf-label">Name</label>
             <div class="fcf-input-group">
                 <input type="text" name="name" style="width: 820px;" class="fcf-form-control" required>
             </div>
         </div>
 
         <div class="fcf-form-group">
-            <label for="Email" class="fcf-label">Your email address</label>
+            <label for="Email" class="fcf-label">Email address</label>
             <div class="fcf-input-group">
                 <input type="email" name="email" style="width: 820px;" class="fcf-form-control" required>
             </div>
         </div>
 
         <div class="fcf-form-group">
-            <label for="Message" class="fcf-label">Your message</label>
+            <label for="Message" class="fcf-label">Message</label>
             <div class="fcf-input-group">
                 <textarea name="message" class="fcf-form-control" style="width: 820px;" rows="6" maxlength="3000" required></textarea>
             </div>
