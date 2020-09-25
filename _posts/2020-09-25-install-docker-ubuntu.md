@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Install Docker on Raspberry Pi 4"
+title: "Install Docker on Ubuntu"
 categories: [Docker, Ubuntu, Linux]
 ---
 In this post we will learn how to install Docker in a Ubuntu 20.04 Docker is the de facto standard to make containerized apps.
@@ -9,7 +9,7 @@ I need a way to practice and make further laboratories, and the best way to enca
 
 * * *
 
-![Docker Image](/assets/images/docker-ubuntu.png)
+![Docker Image](/assets/images/docker.jpg)
 
 * * *
 
