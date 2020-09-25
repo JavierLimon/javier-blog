@@ -7,6 +7,8 @@ In this post we will learn how to install Docker in a raspberry pi 4. Docker is 
 
 I need a way to practice and make further laboratories, and the best way to encapsulate the environment is with [Docker]({{'https://www.docker.com/why-docker' | absolute_url}}){:target="_blank"}.
 
+* * *
+
 ![Docker Image](/assets/images/docker-image.png)
 
 * * *
@@ -113,3 +115,5 @@ References:
 
 * [Docker official install guide]({{ 'https://docs.docker.com/engine/install/ubuntu/' | absolute_url }}){:target="_blank"}
 *  [Docker post install guide]({{ 'https://docs.docker.com/engine/install/linux-postinstall' | absolute_url }}){:target="_blank"}
+
+* * *

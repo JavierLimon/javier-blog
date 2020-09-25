@@ -5,6 +5,8 @@ categories: Docker
 ---
 In this post we going to learn how to run docker images, options and commands related to it.
 
+* * *
+
 ![Docker Image](/assets/images/run-docker.png)
 
 * * *
@@ -97,3 +99,5 @@ docker image rm ubuntu:latest
 ```
 
 Well done, now you know how to run a container with Docker.
+
+* * *
