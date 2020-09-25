@@ -16,7 +16,7 @@ I need a way to practice and make further laboratories, and the best way to enca
 ## [](#header-2)Requirements:
 
 
-* [Ubuntu 20.04.1 LTS]({{ 'https://ubuntu.com/download' | absolute_url }}){:target="_blank"} image.
+* [Ubuntu]({{ 'https://ubuntu.com/download' | absolute_url }}){:target="_blank"} image.
 * Basic Linux commands
 * Basic understanding of Docker
 
