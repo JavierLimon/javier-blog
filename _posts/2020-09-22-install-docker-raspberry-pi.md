@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Install Docker on Raspberry Pi 4"
-categories: [Docker, Raspberry Pi]
+categories: [Docker, Raspberry Pi, Linux]
 ---
 In this post we will learn how to install Docker in a raspberry pi 4. Docker is the de facto standard to make containerized apps.
 

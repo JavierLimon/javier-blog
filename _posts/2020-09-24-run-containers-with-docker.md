@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Run containers with Docker"
-categories: Docker
+categories: [Docker, Linux]
 ---
 In this post we going to learn how to run docker images, options and commands related to it.
 
