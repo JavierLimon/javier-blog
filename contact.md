@@ -16,24 +16,24 @@ order: 1
         <div class="fcf-form-group">
             <label for="Name" class="fcf-label">Your name</label>
             <div class="fcf-input-group">
-                <input type="text" name="name" class="fcf-form-control" required>
+                <input type="text" name="name" style="width: 820px;" class="fcf-form-control" required>
             </div>
         </div>
 
         <div class="fcf-form-group">
             <label for="Email" class="fcf-label">Your email address</label>
             <div class="fcf-input-group">
-                <input type="email" name="email" class="fcf-form-control" required>
+                <input type="email" name="email" style="width: 820px;" class="fcf-form-control" required>
             </div>
         </div>
 
         <div class="fcf-form-group">
             <label for="Message" class="fcf-label">Your message</label>
             <div class="fcf-input-group">
-                <textarea name="message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
+                <textarea name="message" class="fcf-form-control" style="width: 820px;" rows="6" maxlength="3000" required></textarea>
             </div>
         </div>
-
+        <br/>
         <div class="fcf-form-group">
             <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send Message</button>
         </div>
