@@ -9,6 +9,8 @@ I need a way to practice and make further laboratories, and the best way to enca
 
 ![Docker Image](/assets/images/docker-image.png)
 
+* * *
+
 ## [](#header-2)Requirements:
 
 

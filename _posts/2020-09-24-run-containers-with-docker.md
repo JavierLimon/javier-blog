@@ -7,6 +7,8 @@ In this post we going to learn how to run docker images, options and commands re
 
 ![Docker Image](/assets/images/run-docker.png)
 
+* * *
+
 ## [](#header-2)Requirements:
 
 * Have Docker installed.
