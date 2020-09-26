@@ -24,7 +24,7 @@ linkedin:
   username: javier-limon
 
 #
-ghbutton: enabled
+ghbutton: false
 
 plugins:
   - jekyll-target-blank
