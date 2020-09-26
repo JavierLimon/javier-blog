@@ -23,6 +23,9 @@ image: /thumbnail-jumbo.png
 linkedin:
   username: javier-limon
 
+#
+ghbutton: enabled
+
 plugins:
   - jekyll-target-blank
 
