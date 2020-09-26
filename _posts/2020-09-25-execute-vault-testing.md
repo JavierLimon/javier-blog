@@ -13,7 +13,7 @@ Hashicorp depending on the OS you can have one or more ways to installed, as it 
 
 * * *
 
-![Docker Image](/assets/images/vault.jpg)
+![Docker Image](/assets/images/vault.png)
 
 * * *
 
