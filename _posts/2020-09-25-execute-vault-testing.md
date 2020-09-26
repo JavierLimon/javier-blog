@@ -30,25 +30,119 @@ Vault, depending on the OS, have one or more ways to be installed, it is always 
 First we going to run a container with the latest ubuntu and we going to publish the port 8200 in the host for vault, if you want to know more about the working ports of Vault you can check it [here]({{'https://learn.hashicorp.com/tutorials/vault/reference-architecture#design-summary' | absolute_url}}){:target="_blank"}.
 
 ```shell
-docker container run -it -d -p 8200:8200 --name ubuntu_vault_dev ubuntu
+docker container run -it -d -p 8200:8200 --name ubuntu_vault_dev ubuntu /bin/bash
 ```
 
 > We use the -p command to publish the port in the container to the host, this means that when we reach out the port 8200 in the host the docker container will respond.
 
-now we need to conect to the container to install and run vault from there.
+We need to conect to the container to install and run vault from there.
 
 ```bash
 docker container exec -it ubuntu_vault_dev /bin/bash
 ```
 
+Now we need to install some tools we going to need later wget and unzip.
 
+```bash
+apt update && apt install wget unzip -y
+```
+
+> When Im using commands in the containers shell is posible that you need to use the command sudo in front of your commands if you are not using a container, example: "sudo apt update && sudo apt install wget -y"
+
+Now we need to know what architecture you are working on, you can use uname -m to check it.
+
+```bash
+uname -m
+aarch64
+```
+In my case as I'm running the image in a Raspberry pi 4, my architecture is aarch64 (arm64).
+
+Now we going to go to the Hashcorp Vault download page [here]({{ 'https://www.vaultproject.io/downloads' | absolute_url }}){:target="_blank"} and we need to select the right binary and architecture to download.
+
+![Docker Image](/assets/images/post/2020-09-25-download1.png)
+
+And insted on hitting the Download button do a right click and select "Copy Link Location".
+
+![Docker Image](/assets/images/post/2020-09-25-download2.png)
+
+Now in you have everything to install in the container, we need to download the binary in the container, run the command wget and paste the Link.
+
+```bash
+wget https://releases.hashicorp.com/vault/1.5.4/vault_1.5.4_linux_arm64.zip
+```
+Next Unzip the file
+
+```bash
+unzip vault_1.5.4_linux_arm64.zip
+```
+And delete the zip file
+
+```bash
+rm vault_1.5.4_linux_arm64.zip
+```
+
+Lets test the vault binary
+
+```bash
+./vault version
+Vault v1.5.4 (1a730771ec70149293efe91e1d283b10d255c6d1)
+```
+Now lets move the binary to a environment path, to be able to execute everywhere use the command echo $PATH to know that are the environment variables.
+
+```bash
+root@60af5e1b7139:/# echo $PATH
+/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+```
+
+Now move the vault binary to a PATH enviroment folder, personally I prefer /usr/local/bin/ because is almost empty (for testing).
+
+```bash
+mv vault /usr/local/bin/
+
+```
+
+Ok! we are almost there, lets check the installation.
+
+```bash
+vault version
+Vault v1.5.4 (1a730771ec70149293efe91e1d283b10d255c6d1)
+```
+
+Now everything is working, lets start the vault in mode developer!
+
+```bash
+vault server -dev
+```
+
+You are going to see somthing like This
+
+```bash
+WARNING! dev mode is enabled! In this mode, Vault runs entirely in-memory
+and starts unsealed with a single unseal key. The root token is already
+authenticated to the CLI, so you can immediately begin using Vault.
+
+You may need to set the following environment variable:
+
+    $ export VAULT_ADDR='http://127.0.0.1:8200'
+
+The unseal key and root token are displayed below in case you want to
+seal/unseal the Vault or re-authenticate.
+
+Unseal Key: j8i4C8CelXhbDN8AyUb0jUP40db7HhrvIMUTzeZV8Oc=
+Root Token: s.EXiJeOOc838l848XrdxioI6Q
+
+Development mode should NOT be used in production installations!
+
+```
+
+We going to use the Root Token after, please copy it somewhere.
 
 ## [](#header-1) Post on progress, please check it in 24 hours..
-
 
 References:
 
 * Hashicorp Vault [official install guide]({{ 'https://www.vaultproject.io/docs/install' | absolute_url }}){:target="_blank"}
 * Hashicorp Vault [getting started guide]({{ 'https://learn.hashicorp.com/tutorials/vault/getting-started-install' | absolute_url}}){:target="_blank"}
+* Hashicorp [Vault Dev Mode]({{'https://www.vaultproject.io/docs/concepts/dev-server.html' | absolute_url}}){:target="_blank"}
 
 * * *
