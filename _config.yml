@@ -20,6 +20,8 @@ author: Javier Limon
 image: /thumbnail-jumbo.png
 #twitter:
 #  username: lorepirri
+linkedin:
+  username: javier-limon
 
 plugins:
   - jekyll-target-blank
