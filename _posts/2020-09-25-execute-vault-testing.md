@@ -3,7 +3,7 @@ layout: post
 title: "Install Hashicorp Vault for testing using Linux and Docker."
 categories: [Vault, Docker, Linux]
 ---
-In this post we going to install and run a vault server for testing, vault had this mode called developer, so is going to be very easy to do.
+In this post we going to install and run a vault server for testing, in mode developer.
 
 * * *
 
@@ -13,10 +13,9 @@ In this post we going to install and run a vault server for testing, vault had t
 
 Hashicorp offers Vault in Linux, Mac and Windows.
 
-Vault, depending on the OS you can have one or more ways to installed, as it is always recommended to install manually in production, this is because you need a consistent version of vault and know everything is working properly, if someone upgrade the machine and change the vault binary with a newer version, some of the commands, or even it can loss the communication with other vault servers in case you have a cluster, so in this case is the method we going to use.
+Vault, depending on the OS, have one or more ways to be installed, it is always recommended to install manually in production. This is because you need a consistent version of vault to know everything is working properly, if someone upgrade the vault binary with a newer version, is possibly some of the commands can stop to work, or even you can loss the communication with vault cluster. We going to use the manually install.
 
 > If you update by accident Vault in production, you can loss compatibility and connectivity with the cluster.
-
 
 > You need to remember that the Dev method in vault is only recommended for testing purposes and is more insecure and is not recommended by any way running for production.
 
@@ -41,6 +40,8 @@ now we need to conect to the container to install and run vault from there.
 ```bash
 docker container exec -it ubuntu_vault_dev /bin/bash
 ```
+
+
 
 ## [](#header-1) Post on progress, please check it in 24 hours..
 
