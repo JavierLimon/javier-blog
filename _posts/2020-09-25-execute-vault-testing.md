@@ -13,9 +13,9 @@ In this post we going to install and run a vault server for testing, vault had t
 
 Hashicorp offers Vault in Linux, Mac and Windows.
 
-Hashicorp depending on the OS you can have one or more ways to installed, as it is always recommended to install manually in production, this is because you need a consistent version of vault and know everything is working properly, if someone upgrade the machine and change the vault binary with a newer version, some of the commands, or even it can loss the communication with other vault servers in case you have a cluster, so in this case is the method we going to use.
+Vault, depending on the OS you can have one or more ways to installed, as it is always recommended to install manually in production, this is because you need a consistent version of vault and know everything is working properly, if someone upgrade the machine and change the vault binary with a newer version, some of the commands, or even it can loss the communication with other vault servers in case you have a cluster, so in this case is the method we going to use.
 
-> If you update by accident Vault you can loss compatibility and connectivity with the cluster.
+> If you update by accident Vault in production, you can loss compatibility and connectivity with the cluster.
 
 
 > You need to remember that the Dev method in vault is only recommended for testing purposes and is more insecure and is not recommended by any way running for production.
