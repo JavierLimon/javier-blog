@@ -28,4 +28,13 @@ The Objective of this series is to gradually harden the vault server until we ha
 
 
 
+
+
+References:
+
+* Hashicorp Vault [official install guide]({{ 'https://www.vaultproject.io/docs/install' | absolute_url }}){:target="_blank"}
+* Hashicorp Vault [getting started guide]({{ 'https://learn.hashicorp.com/tutorials/vault/getting-started-install' | absolute_url}}){:target="_blank"}
+* Vault [Production Hardening]({{ 'https://learn.hashicorp.com/tutorials/vault/production-hardening' | absolute_url }}){:target="_blank"}
+
+
 ## [](#header-1)This is a post in progress please check in 24 Hours.
