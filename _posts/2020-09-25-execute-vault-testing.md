@@ -30,7 +30,7 @@ Vault, depending on the OS, have one or more ways to be installed, it is always 
 First we going to run a container with the latest ubuntu and we going to publish the port 8200 in the host for vault, if you want to know more about the working ports of Vault you can check it [here]({{'https://learn.hashicorp.com/tutorials/vault/reference-architecture#design-summary' | absolute_url}}){:target="_blank"}.
 
 ```shell
-docker container run -it -d -p 8200:8200 --name ubuntu_vault_dev ubuntu /bin/bash
+docker container run -it -d --name ubuntu_vault_dev ubuntu /bin/bash
 ```
 
 > We use the -p command to publish the port in the container to the host, this means that when we reach out the port 8200 in the host the docker container will respond.
