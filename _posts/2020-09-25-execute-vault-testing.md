@@ -33,8 +33,6 @@ First we going to run a container with the latest ubuntu and we going to publish
 docker container run -it -d --name ubuntu_vault_dev ubuntu /bin/bash
 ```
 
-> We use the -p command to publish the port in the container to the host, this means that when we reach out the port 8200 in the host the docker container will respond.
-
 We need to conect to the container to install and run vault from there.
 
 ```bash
