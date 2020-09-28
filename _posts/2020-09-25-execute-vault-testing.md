@@ -175,7 +175,7 @@ HA Enabled      false
 
 Well done, your Vault test server is working. Remember Hashicorp Dev mode run in memory and all you do it will not be persistent, that means once you stop the server no data will be written.
 
-for stop the server you can just do a control - C command in the vault running terminal.
+for stop the server you can just do a control + C command in the vault running terminal.
 
 
 References:
