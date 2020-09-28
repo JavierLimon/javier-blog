@@ -7,7 +7,7 @@ In this post we going to install and run a vault server for testing, in mode dev
 
 * * *
 
-![Docker Image](/assets/images/vault.png)
+![Vault Image](/assets/images/vault.png)
 
 * * *
 
