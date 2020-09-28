@@ -135,9 +135,48 @@ Development mode should NOT be used in production installations!
 
 ```
 
-We going to use the Root Token after, please copy it somewhere.
+Every time you start the vault server on dev mode, you will get and Unseal Key, and a Root Token.
 
-## [](#header-1) Post on progress, please check it in 24 hours..
+The Root token is the access to your vault server, always look for it, when you initialized.
+
+Now the vault server is running in this terminal, connect to the docker container in a new terminal check the server.
+
+```bash
+vault status
+```
+
+and you will get an error "Error checking seal status: Get "https://127.0.0.1:8200/v1/sys/seal-status": http: server gave HTTP response to HTTPS client"
+
+this is because we have not export the VAULT_ADDR, to do so, put the next command.
+
+```bash
+export VAULT_ADDR='http://127.0.0.1:8200'
+```
+
+and now when we check the status we will get something like This
+
+```bash
+root@60af5e1b7139:/# vault status
+Error checking seal status: Get "https://127.0.0.1:8200/v1/sys/seal-status": http: server gave HTTP response to HTTPS client
+root@60af5e1b7139:/# export VAULT_ADDR='http://127.0.0.1:8200'
+root@60af5e1b7139:/# vault status
+Key             Value
+---             -----
+Seal Type       shamir
+Initialized     true
+Sealed          false
+Total Shares    1
+Threshold       1
+Version         1.5.4
+Cluster Name    vault-cluster-8c2a9073
+Cluster ID      240d9b52-07ed-148d-3395-ea0e4eb082a3
+HA Enabled      false
+```
+
+Well done, your Vault test server is working. Remember Hashicorp Dev mode run in memory and all you do it will not be persistent, that means once you stop the server no data will be written.
+
+for stop the server you can just do a control - C command in the vault running terminal.
+
 
 References:
 
