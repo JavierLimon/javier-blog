@@ -256,8 +256,8 @@ References:
 * Hashicorp Vault [getting started guide]({{ 'https://learn.hashicorp.com/tutorials/vault/getting-started-install' | absolute_url}}){:target="_blank"}
 * Vault [Production Hardening]({{ 'https://learn.hashicorp.com/tutorials/vault/production-hardening' | absolute_url }}){:target="_blank"}
 * Hashicorp Vault [Server Configuration]({{ 'https://www.vaultproject.io/docs/configuration' | absolute_url}}){:target="_blank"}
-* [Hashicorp Seal/Unseal]('https://www.vaultproject.io/docs/concepts/seal.html' | absolute_url){:target="_blank"}
-* [Hashicorp AutoUnseal]({{'https://learn.hashicorp.com/collections/vault/auto-unseal' | absolute_url}}){:target="_blank"}
+* Hashicorp [Seal/Unseal]('https://www.vaultproject.io/docs/concepts/seal.html' | absolute_url){:target="_blank"}
+* Hashicorp [AutoUnseal]({{'https://learn.hashicorp.com/collections/vault/auto-unseal' | absolute_url}}){:target="_blank"}
 
 
 ## [](#header-1)This is a post in progress please check in 24 Hours.
