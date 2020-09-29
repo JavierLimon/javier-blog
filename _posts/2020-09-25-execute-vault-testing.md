@@ -27,7 +27,7 @@ Vault, depending on the OS, have one or more ways to be installed, it is always 
 
 ## [](#header-2)Hands on
 
-First we going to run a container with the latest ubuntu and we going to publish the port 8200 in the host for vault, if you want to know more about the working ports of Vault you can check it [here]({{'https://learn.hashicorp.com/tutorials/vault/reference-architecture#design-summary' | absolute_url}}){:target="_blank"}.
+First we going to run a container with the latest ubuntu.
 
 ```shell
 docker container run -it -d --name ubuntu_vault_dev ubuntu /bin/bash
