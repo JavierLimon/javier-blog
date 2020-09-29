@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Install Hashicorp Vault for testing using Linux and Docker."
+title: "Install Hashicorp Vault for testing using Linux and Docker"
 categories: [Vault, Docker, Linux]
 ---
 In this post we going to install and run a vault server for testing, in mode developer.

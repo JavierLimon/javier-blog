@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Install Hashicorp Vault for production Part 1."
+title: "Install Hashicorp Vault for production Part 1"
 tagline: "Preparing the enviroment"
 categories: [Vault, Docker, Linux]
 ---
