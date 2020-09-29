@@ -15,7 +15,7 @@ The objective of this series is to gradually harden the vault server until we ha
 
 First we want to know what are the recommendations from Hashicorp for a secure Vault server.
 
-## [](#header-3)Recomendations from Hashicorp.
+## [](#header-3) Recomendations from Hashicorp.
 
 * End-to-End TLS
 * Single Tenancy
@@ -37,7 +37,7 @@ First we want to know what are the recommendations from Hashicorp for a secure V
 
 And there is some recommendations if you are using Vault on Cloud.
 
-Beside this I will also cover:
+Beside this in the later post's I will also cover:
 
 * High Availability (HA)
 * Persistent and durable Backend.
@@ -47,11 +47,11 @@ After we finish this post of installation, we going to review this list one by o
 
 ## [](#header-3)In this post we will cover
 
-* Apply the memory lock to the Docker container.
-* Download Binary from Hashicorp web page.
-* Install Vault in a Docker container (Ubuntu 20.04 LTS).
-* Create the configurations files.
-* Test the installation and web UI.
+* Apply the memory lock to the Docker container
+* Download Binary from Hashicorp web page
+* Install Vault in a Docker container (Ubuntu 20.04 LTS)
+* Create the configurations files
+* Test the installation and web UI
 
 ## [](#header-2)Requirements:
 
