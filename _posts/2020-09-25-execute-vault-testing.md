@@ -175,6 +175,25 @@ Well done, your Vault test server is working. Remember Hashicorp Dev mode run in
 
 for stop the server you can just do a control + C command in the vault running terminal.
 
+For exit the container you only need to use the exit command.
+
+```bash
+exit
+```
+
+For clean up after you finish tests, you need to stop the container, remove the container and remove the image in this order.
+
+```bash
+docker container stop ubuntu_vault_dev
+```
+
+```bash
+docker container rm ubuntu_vault_dev
+```
+
+```bash
+docker image rm ubuntu:latest
+```
 
 References:
 
