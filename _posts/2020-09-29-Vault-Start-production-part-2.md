@@ -237,11 +237,11 @@ Now lets check the UI, you can use your root token to temporarily access.
 
 you only need to connect to the computer IP in your browser in my case is http://192.168.1.50:8200/ui remeber to put the 8200 that is the port Vault will respond.
 
-![Vault UI](/assets/images/post/2020-09-29-vault-ui-login.png)
+![Vault UI-1](/assets/images/post/2020-09-29-vault-ui-login.png)
 
 login with your root token.
 
-![Vault UI](/assets/images/post/2020-09-29-vault-ui.png)
+![Vault UI-2](/assets/images/post/2020-09-29-vault-ui.png)
 
 Well done, you finish the Part 2!
 
@@ -256,8 +256,8 @@ References:
 * Hashicorp Vault [getting started guide]({{ 'https://learn.hashicorp.com/tutorials/vault/getting-started-install' | absolute_url}}){:target="_blank"}
 * Vault [Production Hardening]({{ 'https://learn.hashicorp.com/tutorials/vault/production-hardening' | absolute_url }}){:target="_blank"}
 * Hashicorp Vault [Server Configuration]({{ 'https://www.vaultproject.io/docs/configuration' | absolute_url}}){:target="_blank"}
-* Hashicorp [Seal/Unseal]('https://www.vaultproject.io/docs/concepts/seal.html' | absolute_url){:target="_blank"}
-* Hashicorp [AutoUnseal]({{'https://learn.hashicorp.com/collections/vault/auto-unseal' | absolute_url}}){:target="_blank"}
+* Hashicorp [Seal/Unseal]({{ 'https://www.vaultproject.io/docs/concepts/seal.html' | absolute_url}}){:target="_blank"}
+* Hashicorp [AutoUnseal]({{ 'https://learn.hashicorp.com/collections/vault/auto-unseal' | absolute_url}}){:target="_blank"}
 
 
 ## [](#header-1)This is a post in progress please check in 24 Hours.
