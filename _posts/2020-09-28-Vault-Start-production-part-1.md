@@ -37,7 +37,11 @@ First we want to know what are the recommendations from Hashicorp for a secure V
 
 And there is some recommendations if you are using Vault on Cloud.
 
-Beside this it is also recommended that your vault server have High Availability (HA) and had a persistent and durable Backend.
+Beside this I will also cover:
+
+* High Availability (HA)
+* Persistent and durable Backend.
+* Logging.
 
 After we finish this post of installation, we going to review this list one by one, for now if you want to know more you can read it in the [Vault Production Hardening page]({{ 'https://learn.hashicorp.com/tutorials/vault/production-hardening' | absolute_url }}){:target="_blank"}.
 
