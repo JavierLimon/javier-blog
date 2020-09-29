@@ -60,7 +60,8 @@ First we going to run a container with the latest ubuntu and we going to publish
 We going to specify the memory lock with --cap-add, you need to have overlayfs2 as storage driver (last Docker default) if you want to know more about it you can read it in the [Docker container run reference]({{'https://docs.docker.com/engine/reference/run/' | absolute_url}}){:target="_blank"}
 
 ```shell
-docker container run -it -d -p 8200:8200 -p 8201:8201 --cap-add=IPC_LOCK --name ubuntu_vault ubuntu /bin/bash
+docker container run -it -d -p 8200:8200 -p 8201:8201 \
+--cap-add=IPC_LOCK --name ubuntu_vault ubuntu /bin/bash
 ```
 
 We need to conect to the container to install and run vault from there.
