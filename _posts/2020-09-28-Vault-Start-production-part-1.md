@@ -57,7 +57,7 @@ After we finish this post of installation, we going to review this list one by o
 
 First we going to run a container with the latest ubuntu and we going to publish the port 8200 and 8201 in the host for vault, if you want to know more about the working ports of Vault you can check it [here]({{'https://learn.hashicorp.com/tutorials/vault/reference-architecture#design-summary' | absolute_url}}){:target="_blank"}
 
-We going to specify the memory lock with --cap-add, you need to have overlayfs2 as storage driver (last Docker default) if you want to know more about it you can read it in the [Docker container run reference]({{'https://docs.docker.com/engine/reference/run/' | absolute_url}}){:target="_blank"}
+We going to specify the memory lock with the capability IPC_LOCK and the command --cap-add, you need to have overlayfs2 as storage driver (last Docker default) if you want to know more about it you can read it in the [Docker container run reference]({{'https://docs.docker.com/engine/reference/run/' | absolute_url}}){:target="_blank"}
 
 ```shell
 docker container run -it -d -p 8200:8200 -p 8201:8201 \
