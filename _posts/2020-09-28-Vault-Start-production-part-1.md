@@ -57,7 +57,7 @@ After we finish this post of installation, we going to review this list one by o
 
 First we going to run a container with the latest ubuntu and we going to publish the port 8200 and 8201 in the host for vault, if you want to know more about the working ports of Vault you can check it [here]({{'https://learn.hashicorp.com/tutorials/vault/reference-architecture#design-summary' | absolute_url}}){:target="_blank"}
 
-We going to specify the memory lock with --cap-add, if you want to know more about it you can read it in the [Docker container run reference]({{'https://docs.docker.com/engine/reference/run/' | absolute_url}}){:target="_blank"}
+We going to specify the memory lock with --cap-add, you need to have overlayfs2 as storage driver (last Docker default) if you want to know more about it you can read it in the [Docker container run reference]({{'https://docs.docker.com/engine/reference/run/' | absolute_url}}){:target="_blank"}
 
 ```shell
 docker container run -it -d -p 8200:8200 -p 8201:8201 --cap-add=IPC_LOCK --name ubuntu_vault ubuntu /bin/bash
@@ -135,8 +135,6 @@ Ok! we are almost there, lets check the installation.
 vault version
 Vault v1.5.4 (1a730771ec70149293efe91e1d283b10d255c6d1)
 ```
-
-* change Docker driver to overlayfs
 
 References:
 
