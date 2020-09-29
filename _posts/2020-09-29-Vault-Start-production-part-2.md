@@ -237,11 +237,11 @@ Now lets check the UI, you can use your root token to temporarily access.
 
 you only need to connect to the computer IP in your browser in my case is http://192.168.1.50:8200/ui remeber to put the 8200 that is the port Vault will respond.
 
-![Vault UI](/assets/images/post/vault-login.png)
+![Vault UI](/assets/images/post/2020-09-29-vault-ui-login.png)
 
 login with your root token.
 
-![Vault UI](/assets/images/post/vault-ui.png)
+![Vault UI](/assets/images/post/2020-09-29-vault-ui.png)
 
 Well done, you finish the Part 2!
 
