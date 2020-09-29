@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Install Hashicorp Vault for production Part 1."
-tagline: "Creating config files and Autostart Vult"
+title: "Install Hashicorp Vault for production Part 2."
+tagline: "Creating config files, starting the server and test UI"
 categories: [Vault, Docker, Linux]
 ---
 In this post we going to install and configure a vault server for production, this is the part 2.
